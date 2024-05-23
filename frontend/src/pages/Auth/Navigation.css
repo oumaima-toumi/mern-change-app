@@ -1,0 +1,72 @@
+/* Reset some basic styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0097ac; /* Set the background color of the page */
+}
+
+#navigation-container {
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.7); /* Make the sidebar transparent */
+  color: white; /* Ensure text color is white */
+  position: fixed; /* Ensure the sidebar is fixed */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space items evenly with the last item at the bottom */
+  transition: width 0.3s;
+}
+
+#navigation-container:hover {
+  width: 15%;
+}
+
+#navigation-container a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Ensure link color matches the sidebar text */
+}
+
+.nav-item-name {
+  display: none; /* Hidden by default */
+}
+
+#navigation-container:hover .nav-item-name {
+  display: inline-block; /* Show on hover */
+}
+
+#navigation-container .flex-col {
+  padding-top: 3rem; /* Ensure spacing from top */
+}
+
+#navigation-container .flex-col a,
+#navigation-container .bottom-links a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: transform 0.3s;
+}
+
+#navigation-container .flex-col a:hover,
+#navigation-container .bottom-links a:hover {
+  transform: translateX(8px); /* Smooth transition on hover */
+}
+
+#navigation-container ul {
+  list-style-type: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0; /* Remove any default margin */
+}
+
+#navigation-container ul li {
+  margin-bottom: 2rem; /* Add spacing between items */
+}
+
+#navigation-container .bottom-links {
+  margin-top: auto; /* Push these links to the bottom */
+  padding-bottom: 2rem; /* Add some padding at the bottom */
+}

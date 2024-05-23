@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #3232a0;
+  color: #fff;
+}
+
+input,
+textarea {
+  color: #000;
+}

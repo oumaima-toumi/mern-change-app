@@ -1,0 +1,91 @@
+.hero{
+    margin:0px 120px;
+    margin-top: 270px;
+}
+
+.hero-text  {
+    color:#FFF ;
+    font-size:110px;
+    font-weight:500 ;
+    line-height:130px;
+}
+
+.hero-explore{
+   display: flex;
+   align-items : center ; 
+   gap:25px; 
+   width :fit-content  ;
+   height:50px ; 
+   margin-top : 70px; 
+   padding:5px 8px ; 
+   padding-left : 30px ; 
+   border-radius: 120 px ; 
+   background-color : white ;
+   cursor:pointer  ; 
+   border-radius: 50px;
+}
+
+.hero-explore img {
+    width: 50px; /* Adjust the image size as needed */
+    height: 50px; /* Adjust the image size as needed */
+    border-radius: 70%;
+  }
+
+.hero-explore p{
+    color: #292929 ;
+    font-size : 20px ; 
+    font-weight: 500 ; 
+}
+
+.hero-dot-play {
+   margin-top : 150px ; 
+   display: flex; 
+   justify-content : space-between ; 
+   position: fixed;
+   /* Adjust the distance from the bottom as needed */
+   left: 30px;
+    
+
+}
+.hero-dots {
+    display: flex ; 
+    align-items : center ; 
+    gap : 23px ;
+    list-style: none ;
+
+}
+.hero-dot {
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    border-radius: 7.5px;
+    cursor : pointer ;
+    
+    
+}
+.hero-dot.blue{
+    background: #37adab;
+
+}
+.hero-play{
+    display:flex;
+    align-items: center ; 
+    gap : 25px ; 
+    float :right ;
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px;
+    
+}
+.hero-play img {
+    width: 50px; /* Adjust the image size as needed */
+    height: 50px; /* Adjust the image size as needed */
+    border-radius: 70%;
+  }
+.hero-play p{
+    color: #FFF ;
+    font-size:15px ;
+    float:right ;
+
+
+}
